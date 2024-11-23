@@ -172,6 +172,32 @@ select {
 }
 @font-face {
   font-family: "SVN-Gilroyr";
+  src: url("scss/base/fonts/SVN-Gilroy Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("fonts/SVN-Gilroy Medium Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("scss/base/fonts/SVN-Gilroy Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+.background__image {
+  background-image: url("image/hero/backround__hero.png");
+  background-size: cover;
+}
+.background__image .hero {
+  font: 700 16px/1.5 "SVN-Gilroyr";
+}
+
+@font-face {
+  font-family: "SVN-Gilroyr";
   src: url("base/fonts/SVN-Gilroy Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;

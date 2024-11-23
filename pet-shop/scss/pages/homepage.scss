@@ -2,5 +2,10 @@
 @import '../base/_typography.scss';
 
 .background__image {
-  background-image: url("../image/hero/backround-image.png");
+  background-image: url("image/hero/backround__hero.png");
+  background-size: cover;
+
+  .hero {
+    font: 700 16px/1.5 'SVN-Gilroyr';
+  }
 }
