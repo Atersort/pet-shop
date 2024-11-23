@@ -16,6 +16,7 @@
 
 .hero__text {
   margin-left: 130px;
+  margin-bottom: 35px;
 
   .hero__text_h1 {
     font: 700 60px/1.5 'SVN-Gilroyr';
@@ -35,7 +36,11 @@
     color: $dark-color-text;
   }
 
-  .hero__button {
-    margin-left: 130px;
-  }
+}
+
+.hero__button {
+  padding-left: 130px;
+  display: flex;
+  gap: 20px;
+
 }

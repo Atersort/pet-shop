@@ -187,20 +187,15 @@ select {
   border: 1.5px solid #002A48;
   color: #002A48;
   font: 700 16px/1.5 "SVN-Gilroyr";
-  width: 161px;
+  padding: 12px 28px 12px 28px;
+  height: 48px;
 }
 
-.hero__button_play {
+.button__play {
   display: flex;
-}
-
-.hero__button_play::after {
-  content: "";
-  display: flex;
-  background-image: url("/image/icon/Play_Circle.svg");
-  color: #002A48;
-  border: 1px solid #002A48;
-  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 @font-face {
@@ -254,6 +249,7 @@ select {
 
 .hero__text {
   margin-left: 130px;
+  margin-bottom: 35px;
 }
 .hero__text .hero__text_h1 {
   font: 700 60px/1.5 "SVN-Gilroyr";
@@ -270,8 +266,11 @@ select {
   width: 480px;
   color: #002A48;
 }
-.hero__text .hero__button {
-  margin-left: 130px;
+
+.hero__button {
+  padding-left: 130px;
+  display: flex;
+  gap: 20px;
 }
 
 @font-face {

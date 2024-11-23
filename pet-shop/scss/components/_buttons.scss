@@ -28,18 +28,13 @@
   border: 1.5px solid $dark-color-text;
   color: $dark-color-text;
   font: 700 16px/1.5 "SVN-Gilroyr";
-  width: 161px;
+  padding: 12px 28px 12px 28px;
+  height: 48px;
 }
 
-.hero__button_play {
+.button__play {
   display: flex;
-}
-
-.hero__button_play::after {
-  content: "";
-  display: flex;
-  background-image: url("/image/icon/Play_Circle.svg");
-  color: $dark-color-text;
-  border: 1px solid $dark-color-text;
-  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
