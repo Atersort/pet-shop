@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("../base/fonts/SVN-Gilroy-Bold.woff") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
+
+.header__button {
+  align-self: end;
+  margin-left: 476px;
+}
+
+.header__logo {
+  margin-right: 48px;
+}
+
+.header__elem-group {
+  display: flex;
+  margin-left: 48px;
+  align-content: center;
+  .header__elem-group_elem {
+    text-decoration: none;
+    font: 700 16px/1.5 'SVN-Gilroyr';
+  }
+
+  .header__elem-group_elem {
+    margin-left: 48px;
+    width: 48px;
+
+  }
+}
+

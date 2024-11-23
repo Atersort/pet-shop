@@ -1,0 +1,10 @@
+.header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .header__elem-group_elem {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=header.css.map */

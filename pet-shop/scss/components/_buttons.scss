@@ -1,0 +1,18 @@
+@import '../abstract/abstract.scss';
+@import '../base/_typography.scss';
+
+.button {
+  border-radius: 57px;
+  border: none;
+  color: transparent;
+  font: inherit;
+}
+
+.button__primary {
+  background-color: #003459;
+  padding: 0;
+  color: $white-color-text;
+  width: 203px;
+  height: 44px;
+  font:700 16px/1.5 "SVN-Gilroyr";
+}
