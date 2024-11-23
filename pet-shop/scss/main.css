@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "SVN-Gilroyr";
-  src: url("fonts/SVN-Gilroy Medium Italic.otf") format("opentype");
+  src: url("fonts/SVN-Gilroy-Medium.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -105,11 +105,17 @@ select {
   display: flex;
   margin-top: 30px;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
-
-.header__button {
-  align-self: end;
-  margin-left: 476px;
+.header__wrapper .header_navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.header__wrapper .header__button {
+  display: flex;
 }
 
 .header__logo {
@@ -138,7 +144,13 @@ select {
 }
 @font-face {
   font-family: "SVN-Gilroyr";
-  src: url("fonts/SVN-Gilroy Medium Italic.otf") format("opentype");
+  src: url("../base/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("fonts/SVN-Gilroy-Medium.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -152,16 +164,43 @@ select {
   border-radius: 57px;
   border: none;
   color: transparent;
+  font: 700 16px/1.5 "SVN-Gilroy";
   font: inherit;
 }
 
 .button__primary {
   background-color: #003459;
-  padding: 0;
+  padding: 12px 28px 12px 28px;
   color: #FDFDFD;
-  width: 203px;
-  height: 44px;
+  background-size: cover;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
   font: 700 16px/1.5 "SVN-Gilroyr";
+  cursor: pointer;
+}
+
+.button__primary:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button__ghost {
+  background: none;
+  border: 1.5px solid #002A48;
+  color: #002A48;
+  font: 700 16px/1.5 "SVN-Gilroyr";
+  width: 161px;
+}
+
+.hero__button_play {
+  display: flex;
+}
+
+.hero__button_play::after {
+  content: "";
+  display: flex;
+  background-image: url("/image/icon/Play_Circle.svg");
+  color: #002A48;
+  border: 1px solid #002A48;
+  border-radius: 100%;
 }
 
 @font-face {
@@ -172,13 +211,25 @@ select {
 }
 @font-face {
   font-family: "SVN-Gilroyr";
+  src: url("../base/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
   src: url("scss/base/fonts/SVN-Gilroy Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "SVN-Gilroyr";
-  src: url("fonts/SVN-Gilroy Medium Italic.otf") format("opentype");
+  src: url("../base/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("fonts/SVN-Gilroy-Medium.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -188,18 +239,51 @@ select {
   font-weight: 700;
   font-style: normal;
 }
-.background__image {
-  background-image: url("image/hero/backround__hero.png");
-  background-size: cover;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
 }
-.background__image .hero {
-  font: 700 16px/1.5 "SVN-Gilroyr";
+
+.background__image {
+  background-image: url("/image/hero/backround__hero.png");
+  background-size: cover;
+  height: 695px;
+  background-position: center;
+  width: 100%;
+}
+
+.hero__text {
+  margin-left: 130px;
+}
+.hero__text .hero__text_h1 {
+  font: 700 60px/1.5 "SVN-Gilroyr";
+  margin-bottom: 4px;
+  color: #002A48;
+}
+.hero__text .caption {
+  font: 700 48px/1.5 "SVN-Gilroyr";
+  margin-bottom: 24px;
+  color: #002A48;
+}
+.hero__text .caption__down {
+  font: 400 16px/1.5 "SVN-Gilroyr";
+  width: 480px;
+  color: #002A48;
+}
+.hero__text .hero__button {
+  margin-left: 130px;
 }
 
 @font-face {
   font-family: "SVN-Gilroyr";
   src: url("base/fonts/SVN-Gilroy Bold.otf") format("opentype");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("base/fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
 }
 body {

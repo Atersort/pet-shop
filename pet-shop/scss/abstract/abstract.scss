@@ -5,5 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("../base/fonts/SVN-Gilroy-Medium.otf") format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
 $white-color-text: #FDFDFD;
 $background-color: #FCEED5;
+$dark-color-text: #002A48;

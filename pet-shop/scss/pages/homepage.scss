@@ -1,11 +1,41 @@
 @import '../abstract/abstract.scss';
 @import '../base/_typography.scss';
 
-.background__image {
-  background-image: url("image/hero/backround__hero.png");
-  background-size: cover;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
-  .hero {
-    font: 700 16px/1.5 'SVN-Gilroyr';
+.background__image {
+  background-image: url("/image/hero/backround__hero.png");
+  background-size: cover;
+  height: 695px;
+  background-position: center;
+  width: 100%;
+}
+
+.hero__text {
+  margin-left: 130px;
+
+  .hero__text_h1 {
+    font: 700 60px/1.5 'SVN-Gilroyr';
+    margin-bottom: 4px;
+    color: $dark-color-text;
+  }
+
+  .caption {
+    font: 700 48px/1.5 'SVN-Gilroyr';
+    margin-bottom: 24px;
+    color: $dark-color-text;
+  }
+
+  .caption__down {
+    font: 400 16px/1.5 'SVN-Gilroyr';
+    width: 480px;
+    color: $dark-color-text;
+  }
+
+  .hero__button {
+    margin-left: 130px;
   }
 }

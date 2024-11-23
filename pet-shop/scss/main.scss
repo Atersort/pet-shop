@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SVN-Gilroyr";
+  src: url("base/fonts/SVN-Gilroy-Medium.otf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: $background-color;
 }

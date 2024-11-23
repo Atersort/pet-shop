@@ -5,14 +5,41 @@
   border-radius: 57px;
   border: none;
   color: transparent;
+  font: 700 16px/1.5 "SVN-Gilroy";
   font: inherit;
 }
 
 .button__primary {
   background-color: #003459;
-  padding: 0;
+  padding: 12px 28px 12px 28px;
   color: $white-color-text;
-  width: 203px;
-  height: 44px;
-  font:700 16px/1.5 "SVN-Gilroyr";
+  background-size: cover;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font: 700 16px/1.5 "SVN-Gilroyr";
+  cursor: pointer;
+}
+
+.button__primary:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button__ghost {
+  background: none;
+  border: 1.5px solid $dark-color-text;
+  color: $dark-color-text;
+  font: 700 16px/1.5 "SVN-Gilroyr";
+  width: 161px;
+}
+
+.hero__button_play {
+  display: flex;
+}
+
+.hero__button_play::after {
+  content: "";
+  display: flex;
+  background-image: url("/image/icon/Play_Circle.svg");
+  color: $dark-color-text;
+  border: 1px solid $dark-color-text;
+  border-radius: 100%;
 }
